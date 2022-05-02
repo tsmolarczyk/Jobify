@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.title {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 85px;
+  line-height: 101px;
+  text-align: center;
+  width: 60%;
+  color: #000000;
+
+  margin: 10rem 0 0;
+}
+
+.para {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 23px;
+  text-align: center;
+  width: 60rem;
+  color: rgba(0, 0, 0, 0.5);
+
+  margin: 4rem 0;
+}
+
+.image {
+  width: 120rem;
+}

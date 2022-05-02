@@ -1,0 +1,79 @@
+.container {
+  margin: 0 10rem;
+  display: flex;
+  margin-top: 15rem;
+}
+
+.logo {
+  flex: 1;
+  margin-right: 3rem;
+}
+.para {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 23px;
+  text-align: left;
+  flex: 1;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 1rem;
+
+  color: #161724;
+}
+.list {
+  list-style-type: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 225.3%;
+  cursor: pointer;
+  line-height: 4rem;
+
+  color: #161724;
+
+  opacity: 0.6;
+}
+.icons {
+  display: flex;
+}
+.icons > a {
+  height: 10rem;
+  margin: 2rem;
+  height: 4.5rem;
+}
+.seekers {
+  flex: 1;
+}
+
+.employers {
+  flex: 1;
+}
+.resources {
+  flex: 1;
+}
+.icons {
+  flex: 1;
+  height: 100%;
+}
+.social {
+  flex: 1;
+}
+
+.madeby {
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 21px;
+  color: #161724;
+  padding: 2rem;
+  opacity: 0.5;
+}

@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  margin: 0rem 4rem;
+}
+.img {
+  cursor: pointer;
+  height: 5rem;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 23px;
+
+  margin: 0 2rem;
+  background-color: transparent;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+.signup {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  color: #ffffff;
+  padding: 1rem 3rem;
+  border: none;
+  background: #2c69ff;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0 6rem;
+}
