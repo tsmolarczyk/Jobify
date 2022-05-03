@@ -5,16 +5,16 @@ type Props = {
   placeholder: string;
   value: string;
   typ: string;
-  onChange: (event: ChangeEvent<HTMLInputElement>) => void;
+  onChaange: (event: ChangeEvent<HTMLInputElement>) => void;
 };
-const Input = ({ placeholder, value, typ, onChange }: Props) => {
+const Input = ({ placeholder, value, typ, onChaange }: Props) => {
   return (
     <>
       <input
         className={css.input}
         placeholder={placeholder}
         value={value}
-        onChange={onChange}
+        onChange={onChaange}
         type={typ}
       />
       {/* {error && <span>{error}</span>} */}
