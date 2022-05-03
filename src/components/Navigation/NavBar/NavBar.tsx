@@ -1,5 +1,5 @@
 import css from '../NavBar/NavBar.module.css';
-
+import { BlueBtn } from '../../BlueBtn';
 const NavBar = () => {
   return (
     <div className={css.container}>
@@ -13,7 +13,8 @@ const NavBar = () => {
         <button className={css.btn}>Browse Startups</button>
         <button className={css.btn}>Find Startups</button>
         <button className={css.btn}>Login</button>
-        <button className={css.signup}>Sign up</button>
+        <BlueBtn text='Sign Up' />
+        {/* <button className={css.signup}>Sign up</button> */}
       </div>
     </div>
   );

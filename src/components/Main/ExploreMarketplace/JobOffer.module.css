@@ -1,0 +1,12 @@
+.container {
+  background: #ffffff;
+  border: 1px solid rgba(56, 155, 249, 0.15);
+  box-sizing: border-box;
+  box-shadow: 0px 18px 80px rgba(44, 105, 255, 0.05);
+  border-radius: 25px 25px 0px 25px;
+  width: 47rem;
+  height: 50.4rem;
+}
+.wrapper {
+  display: flex;
+}

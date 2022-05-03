@@ -1,4 +1,5 @@
 import css from './SearchBar.module.css';
+import { BlueBtn } from '../BlueBtn';
 
 const SearchBar = () => {
   return (
@@ -12,7 +13,7 @@ const SearchBar = () => {
           />
           <input className={css.input} placeholder='Job title or keyword' />
         </div>
-        <button className={css.btn}>Search</button>
+        <BlueBtn text='Search' />
       </label>
     </div>
   );
