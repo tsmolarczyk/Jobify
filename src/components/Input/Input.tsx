@@ -1,23 +1,39 @@
 import css from './Input.module.css';
 import { ChangeEvent } from 'react';
+import cn from 'classnames';
 
 type Props = {
   placeholder: string;
   value: string;
-  typ: string;
-  onChaange: (event: ChangeEvent<HTMLInputElement>) => void;
+  type: 'password' | 'text' | 'email';
+  onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
+  onBlur?: (event: ChangeEvent<HTMLInputElement>) => void;
+  error?: string | boolean;
 };
-const Input = ({ placeholder, value, typ, onChaange }: Props) => {
+
+const Input = ({
+  placeholder,
+  value,
+  type,
+  onChange,
+  onBlur,
+  error,
+}: Props) => {
+  const classNames = cn(css.input, {
+    [css.wrong]: !!error,
+  });
+
   return (
     <>
       <input
-        className={css.input}
+        className={classNames}
         placeholder={placeholder}
         value={value}
-        onChange={onChaange}
-        type={typ}
+        onChange={onChange}
+        onBlur={onBlur}
+        type={type}
       />
-      {/* {error && <span>{error}</span>} */}
+      {error && <span>{error}</span>}
     </>
   );
 };
