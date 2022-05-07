@@ -3,12 +3,13 @@ import css from './JobTraining.module.css';
 const JobTraining = () => {
   return (
     <div className={css.container}>
-      <h2>Develop Yourself for better career</h2>
+      <h2>Rozwijaj siebie i swoją karierę</h2>
       <p>
-        Get relevant trainings and develop yourself as a keen professional to
-        stand out in this competitive job market.
+        Zapisz się na szkolenia i podnieś swoje kompetencje. <br />
+        Stań się profesjonalistą, który wyróżnia się na tym konkurencyjnym rynku
+        pracy.
       </p>
-      <button>Visit jobs training</button>
+      <button>Znajdź szkolenie</button>
     </div>
   );
 };

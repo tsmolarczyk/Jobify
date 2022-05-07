@@ -2,8 +2,8 @@ import { useEffect } from 'react';
 import css from './NewJobForm.module.css';
 import { Input } from '../../Input/Input';
 import { useState, ChangeEvent, MouseEvent } from 'react';
+import { Main } from '../Main';
 
-// FUNCKJA WALIDUJACA EMAIL
 function validateEmail(email: string) {
   if (
     /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email) ||
@@ -15,18 +15,13 @@ function validateEmail(email: string) {
   }
 }
 
-//FUNKCJA WALIDUJACA PASSWORD
 function checkPassword(password: string) {
   if (password === '123' || password === '') {
-    console.log('checkaPassword zwraca false - nie ma bledu $');
     return false;
   } else {
-    console.log('checkaPassword zwraca true - jest blad $');
     return true;
   }
 }
-
-// *** *** *** FORM COMPONENT *** *** ***
 
 const NewJobForm = () => {
   const [email, setEmail] = useState('');
@@ -87,7 +82,7 @@ const NewJobForm = () => {
           <p className={css.para}>Wpisz hasło</p>
           <Input
             error={error.password}
-            placeholder='Password'
+            placeholder='Hasło'
             value={password}
             type='password'
             onChange={handlePasswordChange}

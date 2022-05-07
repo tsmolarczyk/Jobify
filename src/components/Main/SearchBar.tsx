@@ -1,5 +1,5 @@
 import css from './SearchBar.module.css';
-import { BlueBtn } from '../BlueBtn';
+import { MainBtn } from '../MainBtn';
 
 const SearchBar = () => {
   return (
@@ -11,9 +11,9 @@ const SearchBar = () => {
             src='./assets/images/search_icon.png'
             alt='search icon in searching bar'
           />
-          <input className={css.input} placeholder='Job title or keyword' />
+          <input className={css.input} placeholder='Czego szukasz?' />
         </div>
-        <BlueBtn text='Search' />
+        <MainBtn text='Wyszukaj' />
       </label>
     </div>
   );

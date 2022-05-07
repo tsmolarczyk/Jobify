@@ -7,6 +7,10 @@
   padding: 4rem 0 3rem;
   width: 70%;
   border-radius: 25px;
+  background-image: url('../../../public/assets/images/circles.png');
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .container > h2 {
   font-family: 'Rubik';

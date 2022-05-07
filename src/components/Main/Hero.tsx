@@ -5,11 +5,12 @@ const Hero = () => {
   return (
     <div className={css.container}>
       <h1 className={css.title}>
-        Find the right <br /> job that suits your needs
+        Znajdź swoją <br />
+        wymarzoną pracę
       </h1>
       <p className={css.para}>
-        Finding a job shouldn’t be a full-time job. Tell us what you’re looking
-        for and we’ll get to work for you.
+        Szukanie pracy nie powinno być pracą na etacie. <br />
+        Powiedz nam czego szukasz, a znajdziemy to dla Ciebie.
       </p>
       <SearchBar />
       <img

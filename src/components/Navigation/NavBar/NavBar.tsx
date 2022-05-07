@@ -1,5 +1,5 @@
 import css from '../NavBar/NavBar.module.css';
-import { BlueBtn } from '../../BlueBtn';
+import { MainBtn } from '../../MainBtn';
 const NavBar = () => {
   return (
     <div className={css.container}>
@@ -9,11 +9,10 @@ const NavBar = () => {
         alt='jobify-logo'
       />
       <div className={css.btns}>
-        <button className={css.btn}>Find Jobs</button>
-        <button className={css.btn}>Browse Startups</button>
-        <button className={css.btn}>Find Startups</button>
-        <button className={css.btn}>Login</button>
-        <BlueBtn text='Sign Up' />
+        <button className={css.btn}>Przeszukaj oferty</button>
+        <button className={css.btn}>Znajdź Startup</button>
+        <button className={css.btn}>Zaloguj się</button>
+        <MainBtn text='Zarejestruj się' />
         {/* <button className={css.signup}>Sign up</button> */}
       </div>
     </div>

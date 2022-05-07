@@ -11,37 +11,36 @@ const Footer = () => {
             alt='jobify-logo'
           />
           <p className={css.para}>
-            Finding a job shouldn’t be a <br />
-            full-time job. Tell us what you’re <br />
-            looking for and we’ll get to work for you.
+            Szukanie pracy nie powinno być pracą na etacie. Powidz nam czego
+            szukasz,a znajdziemy to dla Ciebie.
           </p>
         </div>
         <div className={css.seekers}>
-          <h3 className={css.title}>For Job Seekers</h3>
+          <h3 className={css.title}>Dla pracowników</h3>
           <ul className={css.list}>
-            <li>Browse Jobs</li>
-            <li>Salary</li>
-            <li>Career Advice</li>
-            <li>Company Profile</li>
-            <li>Help</li>
+            <li>Znajdź praćę</li>
+            <li>Wynagrodzenie</li>
+            <li>Karierea</li>
+            <li>Profile firm</li>
+            <li>Pomoc</li>
           </ul>
         </div>
         <div className={css.employers}>
-          <h3 className={css.title}>For Emplyers</h3>
+          <h3 className={css.title}>Dla pracodawców</h3>
           <ul className={css.list}>
-            <li>Products</li>
-            <li>Solution</li>
-            <li>Pricing</li>
-            <li>Resources</li>
+            <li>Produkty</li>
+            <li>Rozwiązania</li>
+            <li>Cennik</li>
+            <li>Źródła</li>
           </ul>
         </div>
         <div className={css.resources}>
-          <h3 className={css.title}>Helpfull Resources</h3>
+          <h3 className={css.title}>Pomocne źródła</h3>
           <ul className={css.list}>
-            <li>About Monster</li>
-            <li>Work for Monster</li>
-            <li>Terms of Use</li>
-            <li>Privacy center</li>
+            <li>Praca</li>
+            <li>Rodzaje umów</li>
+            <li>Prawa</li>
+            <li>Prywatność</li>
           </ul>
         </div>
         <div className={css.social}>
