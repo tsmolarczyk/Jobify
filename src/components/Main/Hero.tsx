@@ -3,7 +3,7 @@ import { SearchBar } from './SearchBar';
 
 const Hero = () => {
   return (
-    <div className={css.container}>
+    <section className={css.container}>
       <h1 className={css.title}>
         Znajdź swoją <br />
         wymarzoną pracę
@@ -18,7 +18,7 @@ const Hero = () => {
         src='./assets/images/hero-img.png'
         alt='hero-img-main'
       ></img>
-    </div>
+    </section>
   );
 };
 

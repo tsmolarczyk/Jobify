@@ -1,6 +1,7 @@
 import { MainBtn } from '../../MainBtn';
 import css from './PostOffer.module.css';
-import { NewJobForm } from '../NewJobForm/NewJobForm';
+import { LoginForm } from '../LoginForm/LoginForm';
+import { OfferForm } from '../OfferForm/OfferForm';
 
 const PostOffer = () => {
   return (
@@ -23,7 +24,8 @@ const PostOffer = () => {
           </div>
         </div>
       </div>
-      <NewJobForm />
+      <OfferForm />
+      <LoginForm />
     </div>
   );
 };

@@ -2,7 +2,7 @@ import css from './JobTraining.module.css';
 
 const JobTraining = () => {
   return (
-    <div className={css.container}>
+    <section className={css.container}>
       <h2>Rozwijaj siebie i swoją karierę</h2>
       <p>
         Zapisz się na szkolenia i podnieś swoje kompetencje. <br />
@@ -10,7 +10,7 @@ const JobTraining = () => {
         pracy.
       </p>
       <button>Znajdź szkolenie</button>
-    </div>
+    </section>
   );
 };
 export { JobTraining };

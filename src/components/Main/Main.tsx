@@ -3,7 +3,7 @@ import { Hero } from './Hero';
 import { ExploreMarketplace } from './ExploreMarketplace/ExploreMarketplace';
 import { JobTraining } from './JobTraining';
 
-import { NewJobForm } from './NewJobForm/NewJobForm';
+import { LoginForm } from './LoginForm/LoginForm';
 import { PostOffer } from './PostOffer/PostOffer';
 
 const Main = () => {
@@ -14,7 +14,6 @@ const Main = () => {
       <Hero />
       <ExploreMarketplace />
       <PostOffer />
-
       <JobTraining />
     </div>
   );

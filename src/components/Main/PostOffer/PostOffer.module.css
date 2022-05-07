@@ -6,9 +6,6 @@
   width: 80%;
 }
 
-.container > img {
-  flex: 1;
-}
 .details {
   display: flex;
   flex: 1;

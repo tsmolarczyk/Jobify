@@ -18,7 +18,7 @@ const Footer = () => {
         <div className={css.seekers}>
           <h3 className={css.title}>Dla pracowników</h3>
           <ul className={css.list}>
-            <li>Znajdź praćę</li>
+            <li>Znajdź pracę</li>
             <li>Wynagrodzenie</li>
             <li>Karierea</li>
             <li>Profile firm</li>

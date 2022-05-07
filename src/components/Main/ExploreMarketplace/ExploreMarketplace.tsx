@@ -4,8 +4,8 @@ import { MainBtn } from '../../MainBtn';
 
 const ExploreMarketplace = () => {
   return (
-    <div>
-      <div className={css.container}>
+    <>
+      <section className={css.container}>
         <h2 className={css.title}>Znajdź swoją ofertę</h2>
         <p className={css.para}>
           Szukanie pracy nie powinno być pracą na etacie. <br />
@@ -39,8 +39,8 @@ const ExploreMarketplace = () => {
           />
         </div>
         <MainBtn text='Więcej' />
-      </div>
-    </div>
+      </section>
+    </>
   );
 };
 export { ExploreMarketplace };
