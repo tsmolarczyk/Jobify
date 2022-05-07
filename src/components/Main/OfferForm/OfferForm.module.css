@@ -1,0 +1,61 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 40%;
+  border: 3px solid #2c69ff;
+  padding: 2rem;
+  margin: 4rem auto;
+}
+
+.title {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 59px;
+  color: black;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.para {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  color: #1a1a1a;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0.6rem 0.8rem;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  color: #ffffff;
+  padding: 1rem 3rem;
+  border: none;
+  background: #2c69ff;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 1rem 0;
+}
