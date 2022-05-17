@@ -22,7 +22,6 @@ const Input = ({
   const classNames = cn(css.input, {
     [css.wrong]: !!error,
   });
-
   return (
     <>
       <input

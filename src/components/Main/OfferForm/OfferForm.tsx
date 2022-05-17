@@ -1,22 +1,26 @@
+import { CompanyInput } from '../../CompanyInput/CompanyInput';
 import { Input } from '../../Input/Input';
 import { MainBtn } from '../../MainBtn';
+import { TitleInput } from '../../TitleInput/TitleInput';
 import css from './OfferForm.module.css';
+import { useOfferForm } from './useOfferForm';
 
 const OfferForm = () => {
+  const {
+    handleCompanyOnChange,
+    handleTitleOnChange,
+    form,
+    postNewOffer,
+    setForm,
+  } = useOfferForm();
+
   return (
     <>
       <form className={css.form}>
         <h3 className={css.title}>Daj się znaleźć</h3>
         <div className={css.inputs}>
-          <label>
-            <p className={css.para}>Nazwa firmy</p>
-            <Input type='text' />
-          </label>
-
-          <label>
-            <p className={css.para}>Stanowisko</p>
-            <Input type='text' />
-          </label>
+          <CompanyInput onChange={handleCompanyOnChange} value={form.company} />
+          <TitleInput onChange={handleTitleOnChange} value={form.title} />
 
           <label className={css.checkbox}>
             <p className={css.para}>Rodzaj umowy</p>
@@ -27,12 +31,22 @@ const OfferForm = () => {
 
           <label>
             <p className={css.para}>Lokalizacja</p>
-            <Input type='text' />
+            <Input
+              onChange={(e) =>
+                setForm((state) => ({ ...state, localization: e.target.value }))
+              }
+              type='text'
+            />
           </label>
 
           <label>
             <p className={css.para}>Opis</p>
-            <Input type='text' />
+            <Input
+              onChange={(e) =>
+                setForm((state) => ({ ...state, description: e.target.value }))
+              }
+              type='text'
+            />
           </label>
           <label className={css.checkbox}>
             <p className={css.para}>Benefity</p>
@@ -41,8 +55,13 @@ const OfferForm = () => {
             <Input type='checkbox' />
           </label>
         </div>
-        {/* czy tutaj mam dodac wrappera zeby nadac padding albo szerokosc albo w ogole jakis styl ?? */}
-        <MainBtn text='Zamieść ofertę' />
+
+        <MainBtn
+          // form={form}
+          onClick={postNewOffer}
+          className={css.button}
+          text='Zamieść ofertę'
+        />
       </form>
     </>
   );

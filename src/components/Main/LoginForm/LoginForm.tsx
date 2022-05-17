@@ -32,7 +32,7 @@ const LoginForm = () => {
   });
 
   useEffect(() => {
-    console.log('komponent wyrenderowany');
+    // console.log('komponent wyrenderowany');
   }, []);
 
   const handleClick = (event: MouseEvent) => {

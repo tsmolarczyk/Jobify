@@ -1,8 +1,26 @@
 import css from './ExploreMarketplace.module.css';
 import { JobOffer } from './JobOffer';
 import { MainBtn } from '../../MainBtn';
+import { useEffect, useState } from 'react';
+
+// function postNewJob(newJob) {
+//   fetch('http://localhost:4000/offers/', {
+//     method: 'POST',
+//     headers: { 'Content-Type': 'application/json' },
+//     body: JSON.stringify(newJob),
+//   })
+//     .then((res) => res.json())
+//     .then((data) => {
+//       state.jobs.push(data);
+//       console.log(state.jobs);
+//     });
+// }
 
 const ExploreMarketplace = () => {
+  //1. fetch po prostu +cl'; networking;
+  //2. fetch w useEffect [] +cl; networking;
+  //- zapisac w state
+
   return (
     <>
       <section className={css.container}>

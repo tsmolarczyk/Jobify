@@ -12,3 +12,7 @@
   border-radius: 8px;
   cursor: pointer;
 }
+
+.blue:hover {
+  text-decoration: underline;
+}

@@ -1,7 +1,26 @@
 import css from './Hero.module.css';
 import { SearchBar } from './SearchBar';
+import { memo } from 'react';
+import { FunctionTypeNode } from 'typescript';
 
-const Hero = () => {
+/*
+ memo
+ 
+ Jezeli pierwszy render
+    - zapamietaj komponent
+  Jezeli kolejny render
+     Jezeli propsy w aktualnym renderze !== props w poprzednim renderze
+         - przerenderuj
+      W przeciwnym wypadku
+         - zwroc zmemoizowany komponent
+*/
+
+type Props = {
+  setNumber: () => void;
+};
+
+const Hero = memo(({ setNumber }: Props) => {
+  console.log('Hero');
   return (
     <section className={css.container}>
       <h1 className={css.title}>
@@ -20,6 +39,6 @@ const Hero = () => {
       ></img>
     </section>
   );
-};
+});
 
 export { Hero };

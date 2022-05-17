@@ -12,6 +12,7 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 .container > h2 {
   font-family: 'Rubik';
   font-style: normal;
@@ -48,4 +49,9 @@
   border: 2px solid #ffffff;
   box-sizing: border-box;
   border-radius: 32.5px;
+}
+.container > button:hover {
+  background-color: white;
+  color: #426edb;
+  border: 2px solid transparent;
 }
