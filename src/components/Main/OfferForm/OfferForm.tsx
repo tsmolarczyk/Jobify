@@ -1,17 +1,20 @@
-import { CompanyInput } from '../../CompanyInput/CompanyInput';
+import { CompanyInput } from '../../Input/CompanyInput/CompanyInput';
 import { Input } from '../../Input/Input';
 import { MainBtn } from '../../MainBtn';
-import { TitleInput } from '../../TitleInput/TitleInput';
+import { TitleInput } from '../../Input/TitleInput/TitleInput';
 import css from './OfferForm.module.css';
 import { useOfferForm } from './useOfferForm';
+import { LocalizationInput } from '../../Input/LocalizationInput/LocalizationInput';
+import { DescriptionInput } from '../../Input/InputDescription/DescriptionInput';
 
 const OfferForm = () => {
   const {
     handleCompanyOnChange,
     handleTitleOnChange,
+    handleLocalizationOnChange,
+    handleDescriptionOnChange,
     form,
     postNewOffer,
-    setForm,
   } = useOfferForm();
 
   return (
@@ -29,25 +32,16 @@ const OfferForm = () => {
             <Input type='checkbox' />
           </label>
 
-          <label>
-            <p className={css.para}>Lokalizacja</p>
-            <Input
-              onChange={(e) =>
-                setForm((state) => ({ ...state, localization: e.target.value }))
-              }
-              type='text'
-            />
-          </label>
+          <LocalizationInput
+            onChange={handleLocalizationOnChange}
+            value={form.localization}
+          />
 
-          <label>
-            <p className={css.para}>Opis</p>
-            <Input
-              onChange={(e) =>
-                setForm((state) => ({ ...state, description: e.target.value }))
-              }
-              type='text'
-            />
-          </label>
+          <DescriptionInput
+            onChange={handleDescriptionOnChange}
+            value={form.description}
+          />
+
           <label className={css.checkbox}>
             <p className={css.para}>Benefity</p>
             <Input type='checkbox' />
