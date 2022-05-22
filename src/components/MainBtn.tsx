@@ -11,7 +11,6 @@ type Props = {
 
 const MainBtn = memo(({ className, text, onClick }: Props) => {
   const classNames = cn(css.blue, className);
-  // console.log('render form and that btn');
   return (
     <>
       <button onClick={onClick} className={classNames}>

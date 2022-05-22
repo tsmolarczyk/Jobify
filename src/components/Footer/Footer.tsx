@@ -73,7 +73,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className={css.madeby}>©2022 Made by tsmolarczyk</div>
+      <div className={css.madeby}>
+        ©2022 Made by <a href='https://tsmolarczyk.com/'>tsmolarczyk</a>
+      </div>
     </div>
   );
 };

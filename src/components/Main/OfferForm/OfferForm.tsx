@@ -51,7 +51,6 @@ const OfferForm = () => {
         </div>
 
         <MainBtn
-          // form={form}
           onClick={postNewOffer}
           className={css.button}
           text='Zamieść ofertę'

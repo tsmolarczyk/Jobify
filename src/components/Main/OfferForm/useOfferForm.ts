@@ -38,34 +38,9 @@ const useOfferForm = () => {
     []
   );
 
-  // function postNewJob(newJob) {
-  //   fetch('http://localhost:4000/offers/', {
-  //     method: 'POST',
-  //     headers: { 'Content-Type': 'application/json' },
-  //     body: JSON.stringify(newJob),
-  //   })
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       state.jobs.push(data);
-  //       console.log(state.jobs);
-  //     });
-  // setForm((state) => ({ ...state, localization: e.target.value }));
-  // }
-
-  // fetch('http://localhost:4000/offers/')
-  //   .then((res) => res.json())
-  //   .then((data) => setOffers((state) => ({ ...state, data })));
-
   const postNewOffer = useCallback(
     (event: MouseEvent) => {
       event.preventDefault();
-
-      // fetch('http://localhost:4000/offers/', { method: 'POST', body :JSON.stringify() })
-      //   .then((res) => res.json())
-      //   .then((data) => {
-      //     offer((state) => ({ ...state }));
-      //     console.log(state.jobs);
-      //   });
 
       const payload = {
         company: form.company,
