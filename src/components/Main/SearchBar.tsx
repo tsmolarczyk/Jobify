@@ -1,5 +1,5 @@
 import css from './SearchBar.module.css';
-import { MainBtn } from '../MainBtn';
+import { MainBtn } from '../MainBtn/MainBtn';
 
 const SearchBar = () => {
   return (

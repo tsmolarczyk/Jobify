@@ -7,7 +7,6 @@ type Props = {
 };
 
 const LocalizationInput = memo(({ onChange, value }: Props) => {
-  console.log('localization render');
   return (
     <label>
       <p>Lokalizacja</p>

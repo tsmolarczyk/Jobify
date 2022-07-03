@@ -1,6 +1,6 @@
-import css from './Input.module.css';
 import { ChangeEvent } from 'react';
 import cn from 'classnames';
+import css from './Input.module.css';
 
 type Props = {
   placeholder?: string;

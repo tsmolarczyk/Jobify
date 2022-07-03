@@ -7,7 +7,6 @@ type Props = {
 };
 
 const DescriptionInput = memo(({ onChange, value }: Props) => {
-  console.log('description render');
   return (
     <label>
       <p>Opis</p>

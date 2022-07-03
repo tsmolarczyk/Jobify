@@ -7,6 +7,17 @@ type FormData = {
   description: string;
 };
 
+// const use = <T, S>(arg: T, arg2: S): string => {
+//   // cos na argumencie robione
+//   return "dwdw"
+// }
+
+// const arg = use<string, number>("dwwdw", 121)
+
+// interface ChangeEvent2<T> {
+//   target: T
+// }
+
 const useOfferForm = () => {
   const [form, setForm] = useState<FormData>({
     company: '',
@@ -14,6 +25,7 @@ const useOfferForm = () => {
     localization: '',
     description: '',
   });
+
   const handleCompanyOnChange = useCallback(
     (e: ChangeEvent<HTMLInputElement>) =>
       setForm((state) => ({ ...state, company: e.target.value })),
@@ -48,8 +60,6 @@ const useOfferForm = () => {
         localization: form.localization,
         description: form.description,
       };
-
-      console.log(payload);
     },
     [form.company, form.title]
   );

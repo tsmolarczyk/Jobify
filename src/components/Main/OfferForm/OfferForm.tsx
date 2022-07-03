@@ -1,6 +1,7 @@
+import { useCallback } from 'react';
 import { CompanyInput } from '../../Input/CompanyInput/CompanyInput';
 import { Input } from '../../Input/Input';
-import { MainBtn } from '../../MainBtn';
+import { MainBtn } from '../../MainBtn/MainBtn';
 import { TitleInput } from '../../Input/TitleInput/TitleInput';
 import css from './OfferForm.module.css';
 import { useOfferForm } from './useOfferForm';
@@ -16,6 +17,13 @@ const OfferForm = () => {
     form,
     postNewOffer,
   } = useOfferForm();
+
+  const getConfig = useCallback(async () => {
+    const url = 'http://localhost:4000/config';
+    const res = await fetch(url);
+    const config = await res.json();
+    console.log(config);
+  }, []);
 
   return (
     <>

@@ -1,5 +1,6 @@
 import css from '../NavBar/NavBar.module.css';
-import { MainBtn } from '../../MainBtn';
+import { MainBtn } from '../../MainBtn/MainBtn';
+
 const NavBar = () => {
   return (
     <div className={css.container}>

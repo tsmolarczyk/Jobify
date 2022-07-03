@@ -1,4 +1,4 @@
-import { MainBtn } from '../../MainBtn';
+import { MainBtn } from '../../MainBtn/MainBtn';
 import css from './PostOffer.module.css';
 import { LoginForm } from '../LoginForm/LoginForm';
 import { OfferForm } from '../OfferForm/OfferForm';

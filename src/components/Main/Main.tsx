@@ -7,7 +7,6 @@ import { PostOffer } from './PostOffer/PostOffer';
 
 const Main = () => {
   const [number, setNumber] = useState(1);
-  console.log('Main');
 
   const handleStateChange = useCallback(() => {
     setNumber((state) => state + 1);
@@ -19,6 +18,7 @@ const Main = () => {
       <ExploreMarketplace />
       <PostOffer />
       <JobTraining />
+      <div>Number: {number}</div>
     </div>
   );
 };

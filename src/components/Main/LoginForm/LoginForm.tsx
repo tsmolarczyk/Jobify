@@ -1,8 +1,6 @@
-import { useEffect } from 'react';
+import { useState, useEffect, ChangeEvent, MouseEvent } from 'react';
 import css from './LoginForm.module.css';
 import { Input } from '../../Input/Input';
-import { useState, ChangeEvent, MouseEvent } from 'react';
-import { Main } from '../Main';
 
 function validateEmail(email: string) {
   if (
@@ -15,13 +13,13 @@ function validateEmail(email: string) {
   }
 }
 
-function checkPassword(password: string) {
+const checkPassword = (password: string) => {
   if (password === '123' || password === '') {
     return false;
   } else {
     return true;
   }
-}
+};
 
 const LoginForm = () => {
   const [email, setEmail] = useState('');
@@ -31,9 +29,7 @@ const LoginForm = () => {
     password: '' || false,
   });
 
-  useEffect(() => {
-    // console.log('komponent wyrenderowany');
-  }, []);
+  useEffect(() => {}, []);
 
   const handleClick = (event: MouseEvent) => {
     event.preventDefault();
@@ -64,7 +60,7 @@ const LoginForm = () => {
   };
 
   return (
-    <form className={css.form}>
+    <form data-testid='form' className={css.form}>
       <h2 className={css.title}>Dodaj nową ofertę</h2>
       <div className={css.inputs}>
         <label>
