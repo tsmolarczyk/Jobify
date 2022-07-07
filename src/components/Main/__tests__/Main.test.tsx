@@ -23,6 +23,10 @@ jest.mock('../Hero', () => ({
   Hero,
 }));
 
+jest.mock('../DateComponent/DateComponent', () => ({
+  DateComponent: () => <>{'Ala ma kota'}</>,
+}));
+
 describe('Main', () => {
   test('if login form returns form', () => {
     render(<Main />);

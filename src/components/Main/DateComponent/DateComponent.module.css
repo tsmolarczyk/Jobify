@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+  font-size: 3rem;
+  flex-direction: column;
+  align-items: center;
+  color: orangered;
+  margin: 10rem auto;
+}
