@@ -3,8 +3,10 @@ import { render, screen } from '@testing-library/react';
 import { parseDate } from '../../utils';
 import { DateComponent } from '../DateComponent/DateComponent';
 
+const actual = jest.requireActual('../DateComponent/DateComponent');
+
 jest.mock('../DateComponent/DateComponent', () => ({
-  DateComponent: () => <>{'Ala ma kota'}</>,
+  DateComponent: jest.fn(),
 }));
 
 describe('DateTest', () => {
@@ -17,23 +19,28 @@ describe('DateTest', () => {
   });
 
   test('check if dateComponent mock works', () => {
-    render(
-      <DateComponent date={new Date('August 19, 1935 23:15:30 GMT+00:00')} />
-    );
+    (DateComponent as jest.Mock).mockImplementation(actual.DateComponent);
 
-    const text = screen.findByText(/1935-08-19/);
+    render(<DateComponent date={new Date('1935-10-19')} />);
 
-    expect(text).resolves.toBeTruthy();
+    const text = screen.getByText(/1935-10-19/);
+
+    // expect(text).toBeTruthy();
+    expect(text).toHaveTextContent('1935-10-19');
   });
 
-  test.only('check if dateComponent mock works', () => {
+  test('check if dateComponent mock is working', () => {
+    (DateComponent as jest.Mock).mockImplementation(() => {
+      return <>{'ala ma kota'}</>;
+    });
+
     render(
       <DateComponent date={new Date('August 19, 1935 23:15:30 GMT+00:00')} />
     );
 
-    const text = screen.findByText(/ale ma kota/);
+    const text = screen.getByText(/ala ma kota/i);
 
-    expect(text).resolves.toBeTruthy();
+    expect(text).toBeTruthy();
   });
 });
 

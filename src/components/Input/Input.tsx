@@ -32,6 +32,7 @@ const Input = ({
         onBlur={onBlur}
         type={type}
       />
+
       {error && <span>{error}</span>}
     </>
   );

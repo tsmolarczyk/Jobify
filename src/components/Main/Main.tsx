@@ -20,7 +20,7 @@ const Main = () => {
       <PostOffer />
       <JobTraining />
       <div>Number: {number}</div>
-      <DateComponent date={new Date('August 19, 1935 23:15:30 GMT+00:00')} />
+      <DateComponent date={new Date('October 19, 1932')} />
     </div>
   );
 };
