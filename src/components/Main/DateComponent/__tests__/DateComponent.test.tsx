@@ -1,11 +1,11 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { parseDate } from '../../utils';
-import { DateComponent } from '../DateComponent/DateComponent';
+import { parseDate } from '../../../utils';
+import { DateComponent } from '../DateComponent';
 
-const actual = jest.requireActual('../DateComponent/DateComponent');
+const actual = jest.requireActual('../DateComponent');
 
-jest.mock('../DateComponent/DateComponent', () => ({
+jest.mock('../DateComponent', () => ({
   DateComponent: jest.fn(),
 }));
 

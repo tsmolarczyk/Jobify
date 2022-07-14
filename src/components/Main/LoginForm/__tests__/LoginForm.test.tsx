@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { LoginForm } from '../LoginForm/LoginForm';
+import { LoginForm } from '../LoginForm';
 
 describe('LoginForm', () => {
   test('if login form returns form', () => {

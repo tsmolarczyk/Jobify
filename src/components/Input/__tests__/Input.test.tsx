@@ -1,7 +1,7 @@
 import React, { useState, ChangeEvent } from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { Input } from '../../Input/Input';
+import { Input } from '../Input';
 
 const Wrapper = ({ onChange }: { onChange: (value: string) => void }) => {
   const [state, setState] = useState('');
