@@ -11,7 +11,7 @@ jest.mock('../PostOffer/PostOffer', () => ({
   PostOffer: () => <div />,
 }));
 
-jest.mock('../JobTraining', () => ({
+jest.mock('../JobTraining/JobTraining', () => ({
   JobTraining: () => <div />,
 }));
 
@@ -19,7 +19,7 @@ const Hero = ({ setNumber }: { setNumber: () => void }) => {
   return <button onClick={setNumber}>klik</button>;
 };
 
-jest.mock('../Hero', () => ({
+jest.mock('../Hero/Hero', () => ({
   Hero,
 }));
 

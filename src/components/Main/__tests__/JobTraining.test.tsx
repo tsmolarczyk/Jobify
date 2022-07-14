@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { JobTraining } from '../JobTraining';
+import { JobTraining } from '../JobTraining/JobTraining';
 
 describe('JobTraining', () => {
   test('if renders text for header', () => {

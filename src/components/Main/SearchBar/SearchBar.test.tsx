@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { SearchBar } from '../SearchBar';
+import { SearchBar } from './SearchBar';
 
 describe('SearchBar', () => {
   test('if input has placeholder', () => {
