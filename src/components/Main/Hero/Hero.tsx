@@ -1,6 +1,6 @@
 import { memo } from 'react';
 import css from './Hero.module.css';
-import { SearchBar } from './SearchBar';
+import { SearchBar } from '../SearchBar/SearchBar';
 
 type Props = {
   setNumber: () => void;

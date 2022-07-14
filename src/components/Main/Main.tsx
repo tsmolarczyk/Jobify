@@ -1,7 +1,7 @@
 import { useState, useCallback } from 'react';
-import { Hero } from './Hero';
+import { Hero } from './Hero/Hero';
 import { ExploreMarketplace } from './ExploreMarketplace/ExploreMarketplace';
-import { JobTraining } from './JobTraining';
+import { JobTraining } from './JobTraining/JobTraining';
 
 import { PostOffer } from './PostOffer/PostOffer';
 import { DateComponent } from './DateComponent/DateComponent';
